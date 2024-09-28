@@ -96,7 +96,8 @@ The random forest model was evaluated based on its ability to predict generous t
 
 The following plot displays the top 15 most important features, ranked by their **mean decrease in impurity**, which indicates how much each feature contributed to the model’s ability to classify generous tippers.
 
-![Feature Importances](./feature_importances.png)
+![Feature Importances](./images/feature_importances.png)
+
 
 The plot highlights that **trip duration, distance, fare amount**, and **Vendor ID** were the most important factors influencing tipping behavior.
 
