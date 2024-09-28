@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project aims to predict the amount of tips given by passengers to taxi drivers in New York City. The project uses data from the New York City Taxi and Limousine Commission (TLC), which oversees taxi services in the city. By building machine learning models, we can provide better insights into the factors influencing tipping behavior, enabling taxi drivers and service platforms to offer enhanced services to their customers. The project utilizes data exploration, regression modeling, and machine learning techniques to achieve accurate predictions.
+The goal of this project was to build multiple models, including a **multiple linear regression** and a **random forest model**, to predict whether a taxi rider would leave a high gratuity (>20%) or not (<20%). The project utilized data from **yellow taxi trips taken in New York City during 2017**. After rigorous data exploration and model building, the **final random forest model achieved 86% accuracy and 72% precision** in predicting generous tippers. Key factors influencing tipping behavior included the **duration, distance, and cost of the trip**, which were found to be the most important features in distinguishing high tippers from low tippers.
 
 ## Business Understanding
 
