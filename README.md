@@ -12,9 +12,9 @@ The New York City Taxi and Limousine Commission (TLC) regulates taxi services in
 
 The data used in this project was sourced from the New York City TLC dataset, which contains detailed information about trips made by taxis in NYC, including pick-up/drop-off locations, trip distances, total fares, and tips. The data covers a broad timeframe, and some key characteristics include:
 
-- Number of Records: N/A
+- Number of Records: 22669 rows– each row represents a different trip
 - Features: Distance, Fare, Payment Type, etc.
-- Timeframe: Not specified in this document
+- Timeframe: 2017.
 - Data Limitations: The dataset may include missing or erroneous values, particularly related to payment types and tips, which require cleaning and preprocessing.
 
 Key visualizations from the exploratory data analysis (EDA) are also included in the project to highlight relationships between key features and tipping behavior.
