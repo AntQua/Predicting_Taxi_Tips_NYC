@@ -64,16 +64,42 @@ The project is divided into several key phases, with each phase stored in its re
 
 ## Modeling and Evaluation
 
-This project employs various statistical and machine learning techniques, including:
+**Random Forest Model**: A random forest model consisting of **100 decision trees** was used to improve prediction accuracy by capturing non-linear relationships between the features. The random forest model also provided insights into which features were most important for the prediction task.
 
-1. **Descriptive Statistics:** Basic statistical analysis to understand the data distribution.
-2. **Regression Model:** A linear regression model is used to predict taxi tips based on factors such as fare amount, trip distance, and passenger count.
-3. **Random Forest Model:** A more advanced machine learning model, random forest, is used to further improve the accuracy of predictions.
+### Feature Importance and Data Insights
 
-The evaluation metrics for the models include:
+The dataset, provided by the New York City Taxi & Limousine Commission, contains various features related to taxi trips in NYC during 2017. Key features and their relevance to tipping behavior include:
 
-- **R-squared (R²):** Measures the proportion of variance explained by the model.
-- **Mean Squared Error (MSE):** Provides a measure of the model’s prediction error.
+- **Trip Duration (tpep_pickup_datetime, tpep_dropoff_datetime)**: Longer trip durations often result in higher gratuities.
+- **Trip Distance (Trip_distance)**: The distance of the trip impacts the fare and, consequently, tipping behavior.
+- **Fare Amount (Fare_amount)**: The metered fare is directly related to the tip amount, with higher fares generally leading to higher tips.
+- **Payment Type (Payment_type)**: Riders paying by credit card typically leave tips that are automatically recorded, unlike cash transactions.
+- **Vendor ID (VendorID)**: This feature captured differences between the service providers (Creative Mobile Technologies and VeriFone Inc.), which surprisingly emerged as a significant factor.
+
+### Performance of the Random Forest Model
+
+The random forest model was evaluated based on its ability to predict generous tips (>20%) vs. non-generous tips (<20%). The key features driving the predictions were **trip duration**, **trip distance**, and **fare amount**, along with **Vendor ID**. The model achieved the following performance metrics:
+
+#### Random Forest (Cross-Validation):
+- **Precision**: 0.675
+- **Recall**: 0.757
+- **F1 Score**: 0.714
+- **Accuracy**: 0.680
+
+#### Random Forest (Test Set):
+- **Precision**: 0.675
+- **Recall**: 0.779
+- **F1 Score**: 0.723
+- **Accuracy**: 0.687
+
+### Feature Importance Plot
+
+The following plot displays the top 15 most important features, ranked by their **mean decrease in impurity**, which indicates how much each feature contributed to the model’s ability to classify generous tippers.
+
+![Feature Importances](./feature_importances.png)
+
+The plot highlights that **trip duration, distance, fare amount**, and **Vendor ID** were the most important factors influencing tipping behavior.
+
 
 ## Conclusion
 
