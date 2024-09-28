@@ -19,6 +19,49 @@ The data used in this project was sourced from the New York City TLC dataset, wh
 
 Key visualizations from the exploratory data analysis (EDA) are also included in the project to highlight relationships between key features and tipping behavior.
 
+## Project Structure
+
+The project is divided into several key phases, with each phase stored in its respective folder. Below is a breakdown of the tasks included in each step of the project:
+
+### 1. **Project Proposal Tasks**
+
+- **Gathering information**: Notes from the last executive meeting at Automatidata were reviewed to identify the project goals and deliverables.
+- **Assigning PACE stages**: Tasks were categorized into the PACE (Planning, Analysis, Construction, Execution) framework to streamline project management.
+- **Organizing milestones**: Each task was assigned a milestone to track progress.
+- **Creating a project proposal**: A formal proposal was developed for the executive team’s approval, outlining the scope, timeline, and deliverables for the project.
+
+### 2. **Understand the Data Tasks**
+
+- **Loading and exploring the data**: The New York City TLC dataset was loaded into Python, where initial exploration helped identify key variables and data characteristics.
+- **Custom functions**: Specific functions were written to clean, organize, and preprocess the dataset, ensuring it was suitable for further analysis.
+- **Building a dataframe**: A well-structured dataframe was created to facilitate exploratory data analysis and modeling.
+- **Executive summary**: A concise executive summary was produced to provide Automatidata with a clear understanding of the dataset’s structure, quality, and potential insights.
+
+### 3. **Exploratory Data Analysis (EDA) Tasks**
+
+- **Loading and exploring the data**: Reiterating the importance of understanding the dataset, additional exploration was conducted using Python to uncover relationships between variables.
+- **Custom functions for EDA**: New functions were developed to visualize data trends, such as the relationship between fare amounts, trip distances, and tipping behavior.
+- **Building a dataframe**: The final cleaned dataframe was optimized for further analysis.
+- **Executive summary**: An executive summary was created for internal stakeholders, detailing key findings from the EDA, such as correlations and outliers in the data.
+
+### 4. **Statistical Tests Tasks**
+
+- **Descriptive statistics**: Basic statistical metrics were computed to summarize the data, such as mean, median, and standard deviation of taxi tips, trip distances, and fares.
+- **Hypothesis testing**: Statistical tests were conducted to examine significant relationships within the dataset, such as whether the trip distance impacts tip amounts.
+- **Executive summary**: The results of the statistical tests were summarized for Automatidata’s data team before sharing them with external stakeholders.
+
+### 5. **Regression Modeling Tasks**
+
+- **Descriptive statistics**: Similar to the statistical tests step, basic statistical metrics were calculated to assess the regression model inputs.
+- **Regression model**: A linear regression model was developed to predict taxi tips based on features such as fare amount, distance, and payment type.
+- **Executive summary**: A summary of the regression model’s performance, including key evaluation metrics such as R-squared and Mean Squared Error (MSE), was provided for Automatidata’s internal review.
+
+### 6. **Machine Learning Models Tasks**
+
+- **Random forest model**: A machine learning model, specifically a random forest, was built to improve prediction accuracy compared to the linear regression model.
+- **Executive summary**: A detailed summary of the model’s performance, including feature importance and accuracy metrics, was created for Automatidata’s internal team before the final results were shared with the client.
+
+
 ## Modeling and Evaluation
 
 This project employs various statistical and machine learning techniques, including:
