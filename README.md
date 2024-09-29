@@ -1,5 +1,9 @@
 # Predicting Taxi Tips in NYC
 
+## Acknowledgment
+
+This project was developed as part of the **[Google Advanced Data Analytics Specialization Certificate](https://coursera.org/share/b0a21874c636bdb3b212ad15979debc7)** on Coursera. It was created as a practice project to apply the skills learned during the course, focusing on advanced data analytics techniques such as regression modeling and machine learning.
+
 ## Project Overview
 
 The goal of this project was to build multiple models, including a **multiple linear regression** and a **random forest model**, to predict whether a taxi rider would leave a high gratuity (>20%) or not (<20%). The project utilized data from **yellow taxi trips taken in New York City during 2017**. After rigorous data exploration and model building, the **final random forest model achieved 86% accuracy and 72% precision** in predicting generous tippers. Key factors influencing tipping behavior included the **duration, distance, and cost of the trip**, which were found to be the most important features in distinguishing high tippers from low tippers.
